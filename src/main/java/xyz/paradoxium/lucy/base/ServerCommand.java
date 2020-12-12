@@ -9,8 +9,8 @@ import org.javacord.api.listener.message.MessageCreateListener;
 public abstract class ServerCommand implements MessageCreateListener {
 
     /*
-     * This exists to ease off
-     * everything in my case.
+    This class only exists to quicken everything up,
+    rather than copy pasting the same stuff all over again.
      */
 
     private String command;
@@ -23,12 +23,7 @@ public abstract class ServerCommand implements MessageCreateListener {
     @Override
     public void onMessageCreate(MessageCreateEvent event) {
 
-        /*
-         * The first two returns are useless.
-         * since there are ifPresents at the end.
-         * but i'll just place them there.
-         */
-
+        // These first two ifs are useless, but let's just leave it there for reasons. (it's useless since there is already ifPresent(...) below.
         if(!event.isServerMessage())
             return;
 

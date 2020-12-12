@@ -15,6 +15,8 @@ public class StopCommand extends ServerCommand {
 
     @Override
     protected void runCommand(MessageCreateEvent event, Server server, ServerTextChannel channel, User user, String[] args) {
+
+        // Checks if there is any audio connection.
         server.getAudioConnection().ifPresentOrElse(connection -> {
 
             // If there is an audio connection, then we stop the music.

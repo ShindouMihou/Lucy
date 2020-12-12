@@ -15,6 +15,7 @@ public class LeaveCommand extends ServerCommand {
 
     @Override
     protected void runCommand(MessageCreateEvent event, Server server, ServerTextChannel channel, User user, String[] args) {
+        // Checks if the bot is connected to any voice channel, otherwise report to the user that we aren't.
         server.getConnectedVoiceChannel(event.getApi().getYourself()).ifPresentOrElse(voiceChannel -> {
             // We leave the voice channel and cut off any music.
             server.getAudioConnection().ifPresentOrElse(connection -> {

@@ -15,6 +15,7 @@ public class SkipCommand extends ServerCommand {
 
     @Override
     protected void runCommand(MessageCreateEvent event, Server server, ServerTextChannel channel, User user, String[] args) {
+        // Checks if there are any audio connection.
         server.getAudioConnection().ifPresentOrElse(connection -> {
 
             // If there is an audio connection then we skip the track.

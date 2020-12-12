@@ -25,7 +25,9 @@ public class PlayCommand extends ServerCommand {
 
     @Override
     protected void runCommand(MessageCreateEvent event, Server server, ServerTextChannel channel, User user, String[] args) {
+        // Make sure the message have arguments above one (for example: play kano 2020 remix or play https://youtube.com/...).
         if(args.length > 1){
+
             // We first check if the user is in any voice channel.
             event.getMessageAuthor().getConnectedVoiceChannel().ifPresentOrElse(voiceChannel -> {
 
