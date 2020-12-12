@@ -1,27 +1,45 @@
-#### Lucy, a Music Bot.
+## Lucy, a Music Bot.
+An example of how to implement LavaPlayer with Javacord (including TrackScheduler).
 
-Lucy is a music bot example for Javacord, using the library, LavaPlayer.
+## Information
+
 What differs this from the example on Javacord wiki is the usage of a
-TrackScheduler which queues tracks.
+`TrackScheduler` which queues tracks, etc.
 
-A TrackScheduler is highly-customizable, one can do anything they wish
-with it, for example, use it to notify a user when a next track will start
-or some other stuff.
+As you may know, there is already an example of how to use LavaPlayer with Javacord on
+the [official wiki of Javacord](https://javacord.org/wiki/) but there is one that isn't
+included in their example, and that is the usage of TrackScheduler.
+
+`TrackScheduler`, to simplify things is a highly-customizable class that allows queueing of music,
+looping of music and some other stuff like notifying the server that the next track will start or
+some other stuff.
+
+It is a very handy implementation to have, and as the ability to use Music is still brand-new in Javacord,
+there isn't much who knows how to use the function which is why I decided to create this example, or demonstration
+to be exact.
+
+You may copy it, edit it and improve it to your liking, this will merely serve as a demonstration on how to implement it,
+please note that this isn't developed by an member, or contributor of Javacord but an external entity.
 
 This is merely an example bot, you are to utilize your own mind and creativity
 to create something better. This is also the very basic of the basics, and
 won't contain stuff like repeating music, etc.
 
-This bot supports the usage of YouTube search by default, and also supports the
-usage of YouTube URLs which are all shown on the PlayCommand's play method.
 
-#### Requirements
+## What are demonstrated.
 
-The requirements for this bot to run are:
-- Java (JDK 11 or above).
-- A server, or your home computer that can run the bot.
+* The usage of YouTube search which is provided by LavaPlayer.
+* Track Queue.
+* Track Skipping.
+* Leaving voice channels.
+* Track stop.
 
-#### Things to take note of.
+
+## Requirements
+* Java (JDK 11 or above).
+* A server, or your home computer that can run the bot.
+
+## Notice
 
 As YouTube despises Discord Bots, or any application that scrapes their
 videos, or website, using the YouTube source can be the cause of your home network
@@ -32,7 +50,8 @@ There are ways to bypass this, for example, YouTube IPv6 Rotator but that requir
 an IPv6 /64 block which is still bannable by YouTube, according to my hosting provider,
 an IPv6 block costs 4.99 EUR a month (they do provide one for free).
 
-#### Additional notes.
+You may find more information about the IPv6 rotator on JDA's official server, whilst for anything
+related to Javacord, you may head to the official Javacord server and ask there.
 
-For any inquiries about the example, feel free to send an issue here or find me on Javcord's
-Discord server since that is where I usually roam around when doing nothing.
+[![JDA guild](https://discordapp.com/api/guilds/125227483518861312/embed.png?style=banner2)](https://discord.gg/jtAWrzU)
+[![Javacord Server](https://discordapp.com/api/guilds/151037561152733184/embed.png?style=banner2)](https://discord.gg/0qJ2jjyneLEgG7y3)
