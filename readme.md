@@ -1,6 +1,6 @@
-#### Luci, a Music Bot.
+#### Lucy, a Music Bot.
 
-Luci is a music bot example for Javacord, using the library, LavaPlayer.
+Lucy is a music bot example for Javacord, using the library, LavaPlayer.
 What differs this from the example on Javacord wiki is the usage of a
 TrackScheduler which queues tracks.
 
