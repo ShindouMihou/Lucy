@@ -8,6 +8,7 @@ public class PlayerManager {
 
     // This is created because there is no need to have multiple AudioPlayerManager
     // as a single one can handle everything.
+    // **IMPORTANT: PLEASE INITIALIZE THE PLAYERMANAGER ON YOUR MAIN CLASS BY CALLING PlayerManager.init()**
 
     private static final AudioPlayerManager manager = new DefaultAudioPlayerManager();
 
