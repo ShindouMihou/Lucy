@@ -16,7 +16,10 @@ public class Lucy {
     public static void main(String[] args) {
         // Setup Loggers.
         FallbackLoggerConfiguration.setTrace(false);
-
+        
+        // Initializes the AudioPlayerManager.
+        PlayerManager.init();
+        
         System.out.println("The bot is starting up...");
         // Generates the Discord API Builder.
         new DiscordApiBuilder()
@@ -47,9 +50,6 @@ public class Lucy {
         api.addListener(new SkipCommand());
         api.addListener(new StopCommand());
         api.addListener(new LeaveCommand());
-
-        // Initializes the AudioPlayerManager.
-        PlayerManager.init();
 
         // Prints out that the bot is now up and running.
         System.out.println("The bot is now running >w<!");
